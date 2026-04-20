@@ -11,17 +11,17 @@
 }
 
 .workspace-indicator-fork.name-label {
-  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.17) !important;
+  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.08) !important;
 }
 .workspace-indicator-fork.name-label:hover,
 .workspace-indicator-fork.name-label:focus {
-  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.28) !important;
+  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.14) !important;
 }
 .workspace-indicator-fork.name-label:active {
-  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.32) !important;
+  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.18) !important;
 }
 .workspace-indicator-fork.name-label:active:hover {
-  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.36) !important;
+  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.22) !important;
 }
 
 .workspace-indicator-fork .status-label {
@@ -59,9 +59,9 @@
 }
 
 .workspace-indicator-fork .workspace {
-  border: 1px solid transparent;
-  border-radius: 4px;
-  background-color: #3f3f3f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 .workspace-indicator-fork .workspace {
@@ -69,17 +69,19 @@
 }
 
 .workspace-indicator-fork .workspace.active {
-  border-color: #fff;
+  border-color: st-transparentize(-st-accent-color, 68%);
+  background-color: st-transparentize(-st-accent-color, 95%);
 }
 
 .workspace-indicator-fork-window-preview {
-  background-color: #bebebe;
-  border: 1px solid #828282;
-  border-radius: 1px;
+  background-color: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
 }
 
 .workspace-indicator-fork-window-preview.active {
-  background-color: #d4d4d4;
+  background-color: st-transparentize(-st-accent-color, 82%);
+  border-color: st-transparentize(-st-accent-color, 72%);
 }
 
 .workspace-indicator-fork-menu {
@@ -127,4 +129,7 @@
 .workspace-indicator-fork-menu .editable-menu-item StEntry {
   padding: 9px 9px;
   width: 6.5em;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }

@@ -1,0 +1,130 @@
+/*
+ * SPDX-FileCopyrightText: 2011 Erick Pérez Castellanos <erick.red@gmail.com>
+ * SPDX-FileCopyrightText: 2019 Florian Müllner <fmuellner@gnome.org>
+ *
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ */
+
+.workspace-indicator-fork.previews:active {
+  background-color: none !important;
+  box-shadow: none !important;
+}
+
+.workspace-indicator-fork.name-label {
+  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.17) !important;
+}
+.workspace-indicator-fork.name-label:hover,
+.workspace-indicator-fork.name-label:focus {
+  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.28) !important;
+}
+.workspace-indicator-fork.name-label:active {
+  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.32) !important;
+}
+.workspace-indicator-fork.name-label:active:hover {
+  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.36) !important;
+}
+
+.workspace-indicator-fork .status-label {
+  width: 8em;
+  padding: 0 8px;
+}
+.workspace-indicator-fork .status-label:ltr { padding-right: 4px; }
+.workspace-indicator-fork .status-label:rtl { padding-left: 4px; }
+
+.workspace-indicator-fork .system-status-icon {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.workspace-indicator-fork .workspaces-view.hfade {
+  -st-hfade-offset: 20px;
+}
+
+.workspace-indicator-fork .workspaces-box {
+  spacing: 3px;
+}
+
+.workspace-indicator-fork .workspace-box {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.workspace-indicator-fork StButton:first-child:ltr > .workspace-box,
+.workspace-indicator-fork StButton:last-child:rtl > .workspace-box {
+  padding-left: 5px;
+}
+.workspace-indicator-fork StButton:last-child:ltr > .workspace-box,
+.workspace-indicator-fork StButton:first-child:rtl > .workspace-box {
+  padding-right: 5px;
+}
+
+.workspace-indicator-fork .workspace {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #3f3f3f;
+}
+
+.workspace-indicator-fork .workspace {
+  width: 52px;
+}
+
+.workspace-indicator-fork .workspace.active {
+  border-color: #fff;
+}
+
+.workspace-indicator-fork-window-preview {
+  background-color: #bebebe;
+  border: 1px solid #828282;
+  border-radius: 1px;
+}
+
+.workspace-indicator-fork-window-preview.active {
+  background-color: #d4d4d4;
+}
+
+.workspace-indicator-fork-menu {
+  min-width: 17em;
+}
+
+.workspace-indicator-fork-menu .editable-menu-item.popup-menu-item {
+  padding: 3px 12px;
+}
+
+.workspace-indicator-fork-menu .editable-menu-item .icon-button {
+  padding: 6px;
+}
+
+.workspace-indicator-fork-menu .editable-menu-item .icon-button.flat {
+  background-color: transparent;
+}
+
+.workspace-indicator-fork-menu .editable-menu-item .icon-button.flat:hover {
+  background-color: st-transparentize(white, 90%);
+}
+
+.workspace-indicator-fork-menu .editable-menu-item .icon-button.flat:active {
+  background-color: st-transparentize(white, 85%);
+}
+
+.workspace-indicator-fork-menu .editable-menu-item .icon-button.flat:checked {
+  color: -st-accent-fg-color;
+  background-color: -st-accent-color;
+}
+
+.workspace-indicator-fork-menu .editable-menu-item .icon-button.flat:checked:hover {
+  background-color: st-lighten(-st-accent-color, 10%);
+}
+
+.workspace-indicator-fork-menu .editable-menu-item .icon-button.flat:checked:active {
+  background-color: st-lighten(-st-accent-color, 15%);
+}
+
+.workspace-indicator-fork-menu .editable-menu-item StLabel {
+  padding: 0 11px;
+  width: 6.5em;
+}
+
+.workspace-indicator-fork-menu .editable-menu-item StEntry {
+  padding: 9px 9px;
+  width: 6.5em;
+}

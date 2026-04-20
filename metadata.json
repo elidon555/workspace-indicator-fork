@@ -1,0 +1,16 @@
+{
+  "description": "Fork of Workspace Indicator with a separate UUID and settings schema so it can coexist with the stock extension.",
+  "extension-id": "workspace-indicator-fork",
+  "gettext-domain": "gnome-shell-extension-workspace-indicator-fork",
+  "name": "Workspace Indicator - Fork",
+  "original-authors": [
+    "erick.red@gmail.com"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.workspace-indicator-fork",
+  "shell-version": [
+    "49"
+  ],
+  "url": "https://gitlab.gnome.org/GNOME/gnome-shell-extensions",
+  "uuid": "workspace-indicator-fork@elidon555.github.com",
+  "version": 1
+}
